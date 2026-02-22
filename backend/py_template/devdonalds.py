@@ -42,8 +42,8 @@ def parse():
 
 # [TASK 1] ====================================================================
 # Takes in a recipeName and returns it in a form that 
-def parse_handwriting(recipeName: str) -> Union[str | None]:
-	# TODO: implement me
+def parse_handwriting(recipeName: str) -> str | None:
+
 	return recipeName
 
 
