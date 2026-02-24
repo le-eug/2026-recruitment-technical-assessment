@@ -1,0 +1,9 @@
+do
+
+npm run i
+
+then do
+
+npm run dev
+
+thank you DevSoc

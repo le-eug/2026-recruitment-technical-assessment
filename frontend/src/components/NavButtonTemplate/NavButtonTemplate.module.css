@@ -1,0 +1,47 @@
+.buttonStyle {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+	cursor: pointer;
+
+	background-color: transparent;
+	color: rgba(239, 108, 0, 1);
+	border-radius: 4px;
+	border: 1px solid currentColor;
+
+	padding: 8px;
+	margin: 0 4px;
+
+	transition: 250ms ease;
+}
+
+.buttonStyle:hover {
+	background-color: rgba(239, 108, 0, 0.1);
+
+	/* border color? */
+}
+
+.activeStyle {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+	cursor: pointer;
+
+	background-color: rgba(239, 108, 0, 1);
+	color: rgba(255, 255, 255, 1);
+	border-radius: 4px;
+	border: 1px solid currentColor;
+
+	padding: 8px;
+	margin: 0 4px;
+
+	transition: 250ms ease;
+}
+
+.activeStyle:hover {
+	background-color: rgba(138, 62, 0, 1);
+}
