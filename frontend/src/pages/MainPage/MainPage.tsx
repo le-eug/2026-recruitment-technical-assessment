@@ -6,7 +6,11 @@ import SearchIcon from '@mui/icons-material/Search';
 import GridViewRoundedIcon from '@mui/icons-material/GridViewRounded';
 import MapIcon from '@mui/icons-material/Map';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import { act, useState } from 'react';
+import { useState } from 'react';
+import UtilButtonTemplate from '../../components/UtilButtonTemplate/UtilButtonTemplate';
+import FilterAltIcon from '@mui/icons-material/FilterAlt';
+import FilterListIcon from '@mui/icons-material/FilterList';
+import SearchBar from '../../components/SearchBar/SearchBar';
 
 const MainPage = () => {
 	const [openLogo, setOpenLogo] = useState(true);
@@ -53,6 +57,23 @@ const MainPage = () => {
 					/>
 				</div>
 			</header>
+			<div className={styles.bodyWrapper}>
+				<div className={styles.body}>
+					<div className={styles.bodyTop}>
+						<UtilButtonTemplate
+							icon={FilterAltIcon}
+							text={'Filters'}
+						/>
+						<SearchBar />
+						<UtilButtonTemplate
+							icon={FilterListIcon}
+							text={'Sort'}
+						/>
+					</div>
+					<div className={styles.bodyList}>
+					</div>
+				</div>
+			</div>
 		</>
 	);
 }

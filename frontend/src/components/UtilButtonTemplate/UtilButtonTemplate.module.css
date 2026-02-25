@@ -1,0 +1,29 @@
+.utilButtonStyle {
+	height: 40px;
+	width: 140px;
+
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	align-items: center;
+
+	position: relative;
+	color: #ef6c00;
+
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: currentColor;
+
+	cursor: pointer;
+}
+
+.buttonText {
+	font-family: 'Roboto';
+	font-weight: bold;
+}
+
+.iconWrapper {
+	margin-left: 1.5rem;
+	margin-right: 1rem;
+}
