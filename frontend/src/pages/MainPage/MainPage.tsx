@@ -11,11 +11,16 @@ import UtilButtonTemplate from '../../components/UtilButtonTemplate/UtilButtonTe
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import SearchBar from '../../components/SearchBar/SearchBar';
+import data from '../../../data.json'
+import BuildingCard from '../../components/BuildingCard/BuildingCard';
 
 const MainPage = () => {
 	const [openLogo, setOpenLogo] = useState(true);
 	const [active, setActive] = useState('grid');
 
+	for (const entry of data) {
+		console.log(entry);
+	}
 	return (
 		<>
 			<header className={styles.headerStyle}>
@@ -57,6 +62,7 @@ const MainPage = () => {
 					/>
 				</div>
 			</header>
+
 			<div className={styles.bodyWrapper}>
 				<div className={styles.body}>
 					<div className={styles.bodyTop}>
@@ -70,7 +76,15 @@ const MainPage = () => {
 							text={'Sort'}
 						/>
 					</div>
-					<div className={styles.bodyList}>
+
+					<div className={styles.bodyGrid}>
+						{data.map(building => (
+							<BuildingCard
+								name={building.name}
+								roomsAvailable={building.rooms_available}
+								buildingPicturePath={building.building_picture}
+							/>
+						))}
 					</div>
 				</div>
 			</div>
