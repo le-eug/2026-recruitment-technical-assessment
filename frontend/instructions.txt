@@ -1,4 +1,4 @@
-do
+when you are in frontend directory, do
 
 npm run i
 
